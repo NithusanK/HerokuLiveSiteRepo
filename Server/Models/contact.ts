@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-const Schema = mongoose.Schema; //alias
+const Schema = mongoose.Schema; // alias
 
 const ContactSchema = new Schema
 ({

@@ -19,6 +19,7 @@
       <tbody id="contactList">
 
         <% for(let count = 0; count < contacts.length; count++) { %>
+
         <tr>
         <th scope="row" class="text-center"><%= count + 1 %></th>
         <td><%= contacts[count].FullName %></td>
@@ -27,6 +28,7 @@
         <td class="text-center"><a href="/edit/<%= contacts[count]._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
         <td class="text-center"><a href="/delete/<%= contacts[count]._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
         </tr>
+
         <% } %>
 
       </tbody>

@@ -1,10 +1,10 @@
 import mongoose, { PassportLocalSchema } from 'mongoose';
-const Schema = mongoose.Schema; //alias
+const Schema = mongoose.Schema; // alias
 import passportLocalMongoose from "passport-local-mongoose";
 
 const UserSchema = new Schema
 ({
-    FullName: String,
+    DisplayName: String,
     EmailAddress: String,
     username: String,
     Created:
@@ -16,7 +16,7 @@ const UserSchema = new Schema
     {
         type: Date,
         default: Date.now()
-    }
+    },
 },
 {
     collection: "users"

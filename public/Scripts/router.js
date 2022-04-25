@@ -49,7 +49,7 @@ router.AddTable([
     "/services",
     "/contact",
     "/contact-list",
-    "/products",
+    "/projects",
     "/login",
     "/register",
     "/edit"

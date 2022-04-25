@@ -2,7 +2,7 @@ import express from 'express';
 const router = express.Router();
 
 // import instance of controller
-import { DisplayAboutPage, DisplayContactPage, DisplayHomePage, DisplayProductsPage, DisplayServicesPage } from '../Controllers/index';
+import { DisplayAboutPage, DisplayContactPage, DisplayHomePage, DisplayProjectsPage, DisplayServicesPage } from '../Controllers/index';
 
 /********************************* TOP-LEVEL ROUTES ********************************/
 /* GET home page. */
@@ -17,8 +17,8 @@ router.get('/about', DisplayAboutPage);
 /* GET services page. */
 router.get('/services', DisplayServicesPage);
 
-/* GET products page. */
-router.get('/products', DisplayProductsPage);
+/* GET projects page. */
+router.get('/projects', DisplayProjectsPage);
 
 /* GET contact page. */
 router.get('/contact', DisplayContactPage);

@@ -14,8 +14,8 @@
     function DisplayAboutPage() {
         console.log("About Us Page");
     }
-    function DisplayProductsPage() {
-        console.log("Products Page");
+    function DisplayProjectsPage() {
+        console.log("Projects Page");
     }
     function DisplayServicesPage() {
         console.log("Services Page");
@@ -25,7 +25,7 @@
         $("#AboutUsButton").on("click", function () {
             location.href = "/about";
         });
-        $("main").append(`<p id="MainParagraph" class="mt-3">This is the Main Paragraph</p>`);
+        $("main").append(`<p id="MainParagraph" class="mt-3">Welcome to Nithusan LAB 4 website!</p>`);
         $("main").append(`<article>
         <p id="ArticleParagraph" class="mt-3">This is the Article Paragraph</p>
         </article>`);
@@ -59,7 +59,7 @@
         console.log("Contact Us Page");
         $("a[data='contact-list']").off("click");
         $("a[data='contact-list']").on("click", function () {
-            location.href = "/contact-list";
+            location.href = "/home";
         });
         ContactFormValidation();
         let sendButton = document.getElementById("sendButton");
@@ -118,8 +118,8 @@
             case "about":
                 DisplayAboutPage();
                 break;
-            case "products":
-                DisplayProductsPage();
+            case "projects":
+                DisplayProjectsPage();
                 break;
             case "services":
                 DisplayServicesPage();

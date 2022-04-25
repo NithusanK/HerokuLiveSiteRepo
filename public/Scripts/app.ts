@@ -1,3 +1,9 @@
+/*
+Nithusan Kumaraguruparan
+100657300
+April 24, 2022
+*/
+
 // IIFE -- Immediately Invoked Function Expression
 // AKA Anonymous Self-Executing Function
 "use strict";
@@ -26,9 +32,9 @@
         console.log("About Us Page");
     }
 
-    function DisplayProductsPage(): void
+    function DisplayProjectsPage(): void
     {
-        console.log("Products Page");
+        console.log("Projects Page");
     }
 
     function DisplayServicesPage(): void
@@ -46,7 +52,7 @@
             location.href = "/about";
         });
 
-        $("main").append(`<p id="MainParagraph" class="mt-3">This is the Main Paragraph</p>`);
+        $("main").append(`<p id="MainParagraph" class="mt-3">Welcome to Nithusan LAB 4 website!</p>`);
         //Article.innerHTML = ArticleParagraph;
         $("main").append(`<article>
         <p id="ArticleParagraph" class="mt-3">This is the Article Paragraph</p>
@@ -112,7 +118,7 @@
         $("a[data='contact-list']").off("click");
         $("a[data='contact-list']").on("click", function()
         {
-            location.href = "/contact-list";
+            location.href = "/home";
         });
 
         ContactFormValidation();
@@ -137,6 +143,7 @@
 
                     localStorage.setItem(key, contact.serialize() as string);
                 }
+                
             }
         });
     }
@@ -226,8 +233,8 @@
             case "about": 
                 DisplayAboutPage();
                 break;
-            case "products":
-                DisplayProductsPage();
+            case "projects":
+                DisplayProjectsPage();
                 break;
             case "services":
                 DisplayServicesPage();

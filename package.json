@@ -1,7 +1,7 @@
 {
-  "name": "ice-13",
+  "name": "lab-4",
   "version": "1.0.0",
-  "description": "Repo for WEBD6201 ICE 13",
+  "description": "Repo for WEBD6201 LAB 4",
   "main": "server.js",
   "author": "Nithusan Kumaraguruparan",
   "license": "MIT",

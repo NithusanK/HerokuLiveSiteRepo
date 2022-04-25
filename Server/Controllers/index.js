@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DisplayContactPage = exports.DisplayProductsPage = exports.DisplayServicesPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
+exports.DisplayContactPage = exports.DisplayProjectsPage = exports.DisplayServicesPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
 const index_1 = require("../Util/index");
 function DisplayHomePage(req, res, next) {
     res.render('index', { title: 'Home', page: 'home', displayName: (0, index_1.UserDisplayName)(req) });
@@ -14,10 +14,10 @@ function DisplayServicesPage(req, res, next) {
     res.render('index', { title: 'Our Services', page: 'services', displayName: (0, index_1.UserDisplayName)(req) });
 }
 exports.DisplayServicesPage = DisplayServicesPage;
-function DisplayProductsPage(req, res, next) {
-    res.render('index', { title: 'Our Products', page: 'products', displayName: (0, index_1.UserDisplayName)(req) });
+function DisplayProjectsPage(req, res, next) {
+    res.render('index', { title: 'Our Projects', page: 'projects', displayName: (0, index_1.UserDisplayName)(req) });
 }
-exports.DisplayProductsPage = DisplayProductsPage;
+exports.DisplayProjectsPage = DisplayProjectsPage;
 function DisplayContactPage(req, res, next) {
     res.render('index', { title: 'Contact Us', page: 'contact', displayName: (0, index_1.UserDisplayName)(req) });
 }

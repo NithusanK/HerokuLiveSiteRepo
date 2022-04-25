@@ -1,3 +1,9 @@
+/*
+Nithusan Kumaraguruparan
+100657300
+April 24, 2022
+*/
+
 // modules to support the express server
 import createError from "http-errors";
 import express, { NextFunction } from "express";
@@ -58,8 +64,9 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "../../Client")));
 app.use(express.static(path.join(__dirname, "../../node_modules")));
+app.use(express.static(path.join(__dirname, '../../public')));
+
 
 // setup cors
 app.use(cors());
